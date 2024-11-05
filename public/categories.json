@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "category": "Computers",
+      "slug": "computers"
+    },
+    {
+      "id": 2,
+      "category": "Phones",
+      "slug": "phones"
+    },
+    {
+      "id": 3,
+      "category": "Smart Watches",
+      "slug": "smart-watches"
+    }
+  ]
+  

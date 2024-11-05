@@ -1,0 +1,210 @@
+[
+    {
+      "id": "C001",
+      "product_title": "Gaming Laptop Pro",
+      "product_image": "https://i.ibb.co.com/HP1w3yQ/F-20200407104225-EFa-A4c.jpg",
+      "category": "Computers",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with advanced graphics card and fast SSD.",
+      "specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA GTX 1650",
+        "15.6-inch Full HD"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+        "id": "S001",
+        "product_title": "Smart Watch Series 6",
+        "product_image": "https://i.ibb.co.com/CvvfTYn/rendering-smart-home-device-1.jpg",
+        "category": "Smart Watches",
+        "price": 349.99,
+        "description": "Advanced smart watch with health tracking and app integration.",
+        "specification": [
+          "Heart Rate Monitor",
+          "Blood Oxygen Sensor",
+          "GPS",
+          "Water Resistant",
+          "1.78-inch AMOLED Display"
+        ],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "id": "P003",
+        "product_title": "5G Compact Smartphone",
+        "product_image": "https://i.ibb.co.com/8X9DhTC/4791692.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Compact 5G-enabled smartphone with high-resolution display and smooth performance.",
+        "specification": [
+          "Snapdragon 778G",
+          "6GB RAM",
+          "128GB Storage",
+          "64MP Dual Camera",
+          "5.9-inch OLED Display"
+        ],
+        "availability": true,
+        "rating": 4.2
+      },
+   
+    {
+      "id": "C003",
+      "product_title": "Desktop Workstation Z",
+      "product_image": "https://i.ibb.co.com/k4CHMC0/Laptop-Wellpaper-Dell-1.jpg",
+      "category": "Computers",
+      "price": 1599.99,
+      "description": "Powerful desktop workstation for intensive tasks and multitasking.",
+      "specification": [
+        "Intel Xeon Processor",
+        "32GB RAM",
+        "1TB SSD + 2TB HDD",
+        "NVIDIA Quadro P2200",
+        "27-inch 4K display"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "id": "C004",
+      "product_title": "Convertible Laptop S",
+      "product_image": "https://i.ibb.co.com/7G88vr6/Laptop-Wellpaper-Asus-3.jpg",
+      "category": "Computers",
+      "price": 799.99,
+      "description": "2-in-1 convertible laptop with touch screen and stylus support.",
+      "specification": [
+        "Intel Core i5",
+        "8GB RAM",
+        "512GB SSD",
+        "14-inch Touch Display",
+        "Convertible Design"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": "C005",
+      "product_title": "Business Laptop B",
+      "product_image": "https://i.ibb.co.com/rp5Vz0W/Laptop-Wellpaper-Acer.jpg",
+      "category": "Computers",
+      "price": 1149.99,
+      "description": "Reliable laptop for business use with security features and long battery life.",
+      "specification": [
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "15.6-inch FHD Display",
+        "Fingerprint Reader"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": "C006",
+      "product_title": "All-in-One Desktop PC",
+      "product_image": "https://i.ibb.co.com/vdGcvwv/Laptop-Wallpapers-Toshiba-3.jpg",
+      "category": "Computers",
+      "price": 1399.99,
+      "description": "Space-saving all-in-one desktop with powerful performance and a sleek design.",
+      "specification": [
+        "Intel Core i9",
+        "32GB RAM",
+        "1TB SSD",
+        "27-inch 4K Display",
+        "Integrated Webcam"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "id": "P001",
+      "product_title": "Smartphone Ultra",
+      "product_image": "https://i.ibb.co.com/QmqHW67/4789940.jpg",
+      "category": "Phones",
+      "price": 1099.99,
+      "description": "Flagship smartphone with exceptional camera and fast performance.",
+      "specification": [
+        "Snapdragon 8 Gen 1",
+        "12GB RAM",
+        "256GB Storage",
+        "108MP Triple Camera",
+        "6.7-inch OLED Display"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": "P002",
+      "product_title": "Mid-Range Smartphone Plus",
+      "product_image": "https://i.ibb.co.com/GQ3tq8N/2805141.jpg",
+      "category": "Phones",
+      "price": 599.99,
+      "description": "Affordable smartphone with great features and long battery life.",
+      "specification": [
+        "MediaTek Dimensity 700",
+        "8GB RAM",
+        "128GB Storage",
+        "48MP Dual Camera",
+        "6.5-inch FHD+ Display"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+        "id": "C002",
+        "product_title": "Ultrabook X200",
+        "product_image": "https://i.ibb.co.com/rw78Cm5/Laptop-Wellpaper-msi.jpg",
+        "category": "Computers",
+        "price": 899.99,
+        "description": "Lightweight and powerful ultrabook for professionals.",
+        "specification": [
+          "Intel Core i5",
+          "8GB RAM",
+          "256GB SSD",
+          "13.3-inch Full HD",
+          "Fingerprint reader"
+        ],
+        "availability": true,
+        "rating": 4.4
+      },
+   
+  
+    {
+      "id": "S002",
+      "product_title": "Smart Fitness Band Pro",
+      "product_image": "https://i.ibb.co.com/d6t9Zhp/rendering-smart-home-device-2.jpg",
+      "category": "Smart Watches",
+      "price": 159.99,
+      "description": "Fitness band with comprehensive tracking features and long battery life.",
+      "specification": [
+        "Sleep Tracking",
+        "Step Counter",
+        "Heart Rate Monitor",
+        "10-day Battery Life",
+        "1.4-inch OLED Display"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "id": "S003",
+      "product_title": "Luxury Smart Watch Edition",
+      "product_image": "https://i.ibb.co.com/tm6Phj1/rendering-smart-home-device.jpg",
+      "category": "Smart Watches",
+      "price": 799.99,
+      "description": "Premium smart watch with sapphire glass and luxury materials.",
+      "specification": [
+        "Sapphire Crystal Display",
+        "GPS",
+        "Heart Rate Monitoring",
+        "Wireless Charging",
+        "1.78-inch Retina Display"
+      ],
+      "availability": true,
+      "rating": 4.7
+    }
+  ]
+  
