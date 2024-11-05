@@ -10,8 +10,8 @@ const Sidebar = ({categories}) => {
                 <NavLink>All products</NavLink>
         {
             categories.map(category=>
-                <NavLink key={category.category} to={`/category/${category.category}`} role='menu' 
-                className={({isActive}) => `menu ${isActive ? ' menu-active' : ''}`}>
+                <NavLink key={category.category} to={`/category/${category.category}`} role='btn' 
+                className={({isActive}) => `btn ${isActive ? ' btn-active' : ''}`}>
                     {category.category}
                 </NavLink>
             )

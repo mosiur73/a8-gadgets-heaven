@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 import { MdFavoriteBorder } from "react-icons/md";
 import {  useLoaderData, useParams } from 'react-router-dom';
+import { addToCart } from '../Utility/Utility';
 
 const ProductDetails = () => {
    
@@ -14,6 +15,12 @@ const ProductDetails = () => {
         setProducts(singleProduct)
     },[data,id])
     const {price,product_title,product_image,description,Specification,rating}=product
+
+    //product add to cart
+    const handleAddToCart=(product)=>{
+            addToCart(product)
+          
+    }
    
     return (
         <div className='mt-10'>
@@ -51,7 +58,7 @@ const ProductDetails = () => {
 <p>{rating}</p>
       </div>
       <div className='flex'>
-      <button className='btn btn-warning items-center justify-center'>add to Cart <FiShoppingCart></FiShoppingCart></button>
+      <button onClick={()=>handleAddToCart(product)} className='btn btn-warning '>add to Cart <FiShoppingCart></FiShoppingCart></button>
       <MdFavoriteBorder></MdFavoriteBorder>
       </div>
     </div>

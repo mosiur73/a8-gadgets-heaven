@@ -12,9 +12,14 @@ import Home from './component/Home/Home.jsx';
 import ProductCard from './component/ProductCard/ProductCard.jsx';
 import ProductDetails from './component/ProductDetails/ProductDetails.jsx';
 import Dashboard from './component/Dashboard/Dashboard.jsx';
+import CartList from './component/CartList/CartList.jsx';
+import WishList from './component/WishList/WishList.jsx';
+import Statistics from './component/Statistic/Statistics.jsx';
+
 
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element:<Root></Root>,
@@ -44,11 +49,22 @@ const router = createBrowserRouter([
        element:<ProductDetails></ProductDetails>,
        loader:()=>fetch('../devicedata.json')
        
+      },
+      {
+        path:"/dashboard",
+        element:<Dashboard></Dashboard>,
+       
+      },
+      {
+        path:"/static",
+        element:<Statistics></Statistics>
       }
+      
     ]
     
   },
 ]);
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
