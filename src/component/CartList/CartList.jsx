@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getAllProducts } from '../Utility/Utility';
+import { getAllProducts, removeProducts } from '../Utility/Utility';
 import Card from '../Card/Card';
 
 const CartList = () => {
@@ -9,7 +9,12 @@ const CartList = () => {
     const product = getAllProducts()
       setProducts(product)
   }, [])
-
+     
+  const handleRemove = id => {
+    removeProducts(id)
+    const product = getAllProducts()
+    setProducts(product)
+  }
 
 
     return (
@@ -28,7 +33,7 @@ const CartList = () => {
 
              <div className='space-y-4'>
                 {
-                    products.map(product=><Card key={product.id} product={product}></Card> )
+                    products.map(product=><Card key={product.id} product={product} handleRemove={handleRemove}></Card> )
                 }
              </div>
         </div>

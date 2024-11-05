@@ -1,8 +1,9 @@
 import React from 'react';
+import { MdDelete } from "react-icons/md";
 
-const Card = ({product}) => {
+const Card = ({product,handleRemove}) => {
    
-    const {price,product_image,product_title,description}=product
+    const {price,product_image,product_title,description,id}=product
     return (
         <div className='bg-slate-200 p-6 rounded-xl mt-6'>
             <div className='flex gap-4'>
@@ -12,6 +13,9 @@ const Card = ({product}) => {
                     <p className='text-start'>{description}</p>
                     <p className='text-start text-xl'>{price}</p>
                 </div>
+            </div>
+            <div className='flex justify-end items-center'>
+                <button onClick={()=>handleRemove(id)} className='text-3xl '><MdDelete /></button>
             </div>
         </div>
     );

@@ -25,4 +25,16 @@ const addToCart=product=>{
     toast.success('Successfully Added')
     
 }
-export {addToCart,getAllProducts}
+
+
+
+const removeProducts = id => {
+    // get all previously saved coffee data
+    const products = getAllProducts()
+    const remaining = products.filter(product => product.id != id)
+    localStorage.setItem('products', JSON.stringify(remaining))
+    toast.success('Successfully Removed!')
+  }
+
+
+export {addToCart,getAllProducts,removeProducts}

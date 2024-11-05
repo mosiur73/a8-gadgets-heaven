@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 import { MdFavoriteBorder } from "react-icons/md";
 import {  useLoaderData, useParams } from 'react-router-dom';
-import { addToCart } from '../Utility/Utility';
+import { addToCart,  } from '../Utility/Utility';
+import { addToWishList } from '../Utility/WiceUtility';
 
 const ProductDetails = () => {
    
@@ -21,6 +22,10 @@ const ProductDetails = () => {
             addToCart(product)
           
     }
+    //product add wish list
+    const handleAddToWishlist=(product)=>{
+      addToWishList(product)
+    }
    
     return (
         <div className='mt-10'>
@@ -35,15 +40,15 @@ const ProductDetails = () => {
     <img
       src={product_image}
       className="max-w-sm rounded-lg shadow-2xl" />
-    <div className=' justify-start'>
-      <h1 className="text-2xl font-bold">{product_title}</h1>
-      <p className="py-6">{price} </p>
-      <button className="btn btn-outline">in-stock</button>
-      <p>{description}</p>
-      <h1>Specification:</h1>
-      <h2 className='text-[#09080F] text-xl font-bold'>Rating:</h2>
+    <div className=' justify-start space-y-2'>
+      <h1 className="text-2xl font-bold text-start">{product_title}</h1>
+      <p className="py-6 text-start">price:{price} </p>
+      <button className="btn btn-outline flex">in-stock</button>
+      <p className='text-start'>{description}</p>
+      <h1 className='text-start'>Specification:</h1>
+      <h2 className='text-[#09080F] text-xl font-bold text-start'>Rating:</h2>
       
-      <div className='flex'>
+      <div className='flex gap-4'>
       <div className="rating">
   <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
   <input
@@ -57,9 +62,9 @@ const ProductDetails = () => {
 </div>
 <p>{rating}</p>
       </div>
-      <div className='flex'>
+      <div className='flex gap-8'>
       <button onClick={()=>handleAddToCart(product)} className='btn btn-warning '>add to Cart <FiShoppingCart></FiShoppingCart></button>
-      <MdFavoriteBorder></MdFavoriteBorder>
+      <button onClick={()=>handleAddToWishlist(product)} className=' btn text-3xl'><MdFavoriteBorder></MdFavoriteBorder></button>
       </div>
     </div>
   </div>

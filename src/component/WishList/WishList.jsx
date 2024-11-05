@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { getAllWishList } from '../Utility/WiceUtility';
+import Wice from './Wice';
 
 const WishList = () => {
+    const [products,setProducts]=useState([])
+    useEffect(() => {
+      const product = getAllWishList()
+        setProducts(product)
+    }, [])
     return (
         <div>
             <div className='flex justify-between mt-6'>
@@ -14,6 +21,11 @@ const WishList = () => {
                     </div>
 
                 </div>
+             </div>
+             <div>
+                {
+                   products.map(product => <Wice key={product.id} product={product}></Wice>) 
+                }
              </div>
         </div>
     );
