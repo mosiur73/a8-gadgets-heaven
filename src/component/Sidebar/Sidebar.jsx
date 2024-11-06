@@ -16,7 +16,7 @@ const Sidebar = ({categories}) => {
                 </NavLink>
             )
         }
-    </div>
+    </div>                                                         
         </div>
     );
 };
