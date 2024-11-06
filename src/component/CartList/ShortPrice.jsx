@@ -1,9 +1,7 @@
 import React from 'react';
-import { MdDelete } from "react-icons/md";
 
-const Card = ({product,handleRemove}) => {
-    
-   
+const ShortPrice = (short) => {
+    console.log(short);
     const {price,product_image,product_title,description,id}=product
     return (
         <div className='bg-slate-200 p-6 rounded-xl mt-6'>
@@ -22,4 +20,4 @@ const Card = ({product,handleRemove}) => {
     );
 };
 
-export default Card;
+export default ShortPrice;

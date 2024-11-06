@@ -12,9 +12,9 @@ import Home from './component/Home/Home.jsx';
 import ProductCard from './component/ProductCard/ProductCard.jsx';
 import ProductDetails from './component/ProductDetails/ProductDetails.jsx';
 import Dashboard from './component/Dashboard/Dashboard.jsx';
-import CartList from './component/CartList/CartList.jsx';
-import WishList from './component/WishList/WishList.jsx';
+
 import Statistics from './component/Statistic/Statistics.jsx';
+import Feature from './component/Feature/Feature.jsx';
 
 
 
@@ -53,11 +53,16 @@ const router = createBrowserRouter([
       {
         path:"/dashboard",
         element:<Dashboard></Dashboard>,
+        loader:()=>fetch('../devicedata.json')
        
       },
       {
         path:"/static",
         element:<Statistics></Statistics>
+      },
+      {
+        path:"/feature",
+        element:<Feature></Feature>
       }
       
     ]

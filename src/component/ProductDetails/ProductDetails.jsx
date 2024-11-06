@@ -6,7 +6,8 @@ import { addToCart,  } from '../Utility/Utility';
 import { addToWishList } from '../Utility/WiceUtility';
 
 const ProductDetails = () => {
-   
+  const [total,setTotal]=useState([0])
+  
    const {id}=useParams()
    const data =useLoaderData()
    const [product,setProducts]=useState({})
@@ -15,11 +16,14 @@ const ProductDetails = () => {
         const singleProduct=data.find(product =>product.id == id)
         setProducts(singleProduct)
     },[data,id])
-    const {price,product_title,product_image,description,Specification,rating}=product
+    const {price,product_title,product_image,description,rating}=product
 
     //product add to cart
     const handleAddToCart=(product)=>{
             addToCart(product)
+            console.log(addToCart);
+            
+            setTotal(total + price)
           
     }
     //product add wish list

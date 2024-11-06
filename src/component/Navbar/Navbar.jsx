@@ -29,6 +29,7 @@ const Navbar = () => {
        <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/statice">Statistics</NavLink></li>
       <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+      <li><NavLink to="/feature">Feature</NavLink></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">Gadget Heaven</a>
@@ -39,6 +40,7 @@ const Navbar = () => {
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/static">Statistics</NavLink></li>
       <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+      <li><NavLink to="/feature">Feature</NavLink></li>
   
     </ul>
   </div>
