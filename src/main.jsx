@@ -58,7 +58,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/static",
-        element:<Statistics></Statistics>
+        element:<Statistics></Statistics>,
+        
       },
       {
         path:"/feature",
