@@ -3,6 +3,7 @@ import {  useLoaderData } from 'react-router-dom';
 import CartList from '../CartList/CartList';
 import WishList from '../WishList/WishList';
 import './Dashboard.css'
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     const data =useLoaderData()
@@ -30,6 +31,11 @@ const Dashboard = () => {
     
     return (
         <div className='mt-10 mb-10'>
+                      <Helmet>
+                <meta charSet="utf-8" />
+                <title>gadgets-Dashboard page</title>
+                
+            </Helmet>
              <div className=' bg-[#9538E2] w-full h-[300px] rounded-lg pt-20  '>
             
             <h2 className='text-center text-[#FFFFFF] text-5xl font-bold mb-6'>Dashboard</h2>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom';
 import { BarChart, XAxis, YAxis, Bar } from 'recharts';
 
@@ -22,6 +23,11 @@ const Statistics = () => {
       
     return (
         <div>
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>gadgets-statistice page</title>
+                
+            </Helmet>
            
            {/* <LineChart width={600} height={500} data={productData}>
             <Line dataKey="price"></Line>

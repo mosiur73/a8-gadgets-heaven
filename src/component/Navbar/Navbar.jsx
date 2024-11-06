@@ -1,12 +1,17 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { FiShoppingCart } from "react-icons/fi";
 import { MdFavoriteBorder } from "react-icons/md";
 
 const Navbar = () => {
+  const [activePage, setActivePage] = useState(""); // Track the active page
+  const location = useLocation();
+
+  // Set background conditionally
+  const navbarBackground = activePage === "home" || location.pathname === "/" ? "bg-blue-500" : '';
     return (
         <div>
-            <div className="navbar bg-base-200 rounded-lg">
+            <div className={`navbar ${navbarBackground} rounded-lg`}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +42,7 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-10">
     
-      <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/" onClick={() => setActivePage("home")} activeClassName="text-blue-500">Home</NavLink></li>
       <li><NavLink to="/static">Statistics</NavLink></li>
       <li><NavLink to="/dashboard">Dashboard</NavLink></li>
       <li><NavLink to="/feature">Feature</NavLink></li>
