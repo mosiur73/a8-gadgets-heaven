@@ -8,7 +8,7 @@ const Navbar = () => {
   const location = useLocation();
 
   // Set background conditionally
-  const navbarBackground = activePage === "home" || location.pathname === "/" ? "bg-blue-500" : '';
+  const navbarBackground = activePage === "home" || location.pathname === "/" ? "bg-purple-500" : '';
     return (
         <div>
             <div className={`navbar ${navbarBackground} rounded-lg`}>
