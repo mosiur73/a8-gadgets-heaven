@@ -3,8 +3,6 @@
 ## 🚀 Overview  
 A modern e-commerce platform built with React and Vite, offering a seamless shopping experience with intuitive navigation, secure transactions, and real-time order tracking.
 
-## 📸 Screenshot  
-*(Include a screenshot of your project here, if possible.)*
 
 ## 🛠 Technologies Used  
 - **React + Vite**  
